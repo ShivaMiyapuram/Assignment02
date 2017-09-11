@@ -14,17 +14,22 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Periodic Table"
+        android:textStyle="bold"
         android:layout_marginBottom="30dp"
-        android:textSize="22sp"/>
+        android:textSize="22sp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#E0F7FA"/>
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:rowCount="3"
-        android:columnCount="3"
+        android:rowCount="4"
+        android:columnCount="4"
 
         >
+
         <Button
             android:id="@+id/button1"
             android:layout_width="50dp"
@@ -37,14 +42,106 @@
             />
 
         <Button
+            android:id="@+id/button6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#673AB7"
+            android:text="He"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/button100"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#007f56"
+            android:text="Li"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+
+            />
+
+        <Button
+            android:id="@+id/button111"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00557f"
+            android:text="Be"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+
+            />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#AD1457"
+            android:text="B"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+
+            />
+
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#90CAF9"
+            android:text="C"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#CDDC39"
+            android:text="N"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+
+            />
+
+
+        <Button
             android:id="@+id/button2"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="#FFEB3B"
+            android:background="#795548"
             android:text="O"
             android:layout_margin="5dp"
             android:onClick="onClick"
-           />
+            />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#607D8B"
+            android:text="F"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+
+            />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#651FFF"
+            android:text="Ne"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+
+            />
+
+
+
+
         <Button
             android:id="@+id/button3"
             android:layout_width="50dp"
@@ -54,12 +151,25 @@
             android:layout_margin="5dp"
             android:onClick="onClick"
             />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#004D40"
+            android:text="Mg"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+
+            />
+
+
         <Button
             android:id="@+id/button4"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="#4CAF50"
-            android:text="Cl"
+            android:text="Al"
             android:layout_margin="5dp"
             android:onClick="onClick"
             />
@@ -68,53 +178,56 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="#009688"
-            android:text="K"
-            android:layout_margin="5dp"
-            android:onClick="onClick"
-           />
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#673AB7"
-            android:text="He"
+            android:text="Si"
             android:layout_margin="5dp"
             android:onClick="onClick"
             />
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#3F51B5"
-            android:text="C"
-            android:layout_margin="5dp"
-            android:onClick="onClick"
-           />
+
         <Button
             android:id="@+id/button8"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="#D81B60"
-            android:text="Se"
+            android:text="P"
             android:layout_margin="5dp"
             android:onClick="onClick"
-           />
+            />
         <Button
             android:id="@+id/button9"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="#2196F3"
-            android:text="Po"
+            android:text="S"
             android:layout_margin="5dp"
             android:onClick="onClick"
-               />
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //
+
     </GridLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         >
 
         <EditText
@@ -123,8 +236,10 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Click on elements"
+            android:hint="Click on elements"
+            android:gravity="center"
             android:textColor="@android:color/darker_gray"
+            android:backgroundTint="@android:color/holo_blue_light"
             android:layout_gravity="center"/>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -139,6 +254,8 @@
                 android:layout_height="wrap_content"
                 android:text="Reset"
                 android:onClick="onReset"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="5dp"
                 />
 
             <Button
@@ -147,6 +264,7 @@
                 android:layout_height="wrap_content"
                 android:text="Calculate"
                 android:onClick="onCalculate"
+                android:background="@color/colorPrimary"
                 />
 
 
@@ -154,24 +272,26 @@
         <LinearLayout android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-
+            android:layout_marginTop="10dp"
             >
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+
             android:layout_marginLeft="20dp"
             android:gravity="left"
             android:text="Formula:"
+            android:fontFamily="serif"
+
             android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
                 android:layout_marginLeft="20dp"
                 android:text="_ _ _ _ _ _ _"
                 android:textSize="22sp" />

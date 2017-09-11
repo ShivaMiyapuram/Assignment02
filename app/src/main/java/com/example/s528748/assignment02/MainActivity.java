@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public static String str = "";
     public static ArrayList<String> arr = new ArrayList<>();
-    public static String[] elements = {"H","O", "Na", "Cl", "K", "He", "C", "Se", "Po"};
+    public static String[] elements = {"Al", "B", "Be", "C", "Fl", "H", "He", "Li", "Mg", "N", "Na", "Ne", "O", "P", "S", "Si"};
     public void onClick(View v){
         int id = v.getId();
         Button b = (Button) findViewById(id);
@@ -40,28 +40,45 @@ public class MainActivity extends AppCompatActivity {
 
     public void onCalculate(View v) {
         String a[] = (String[]) arr.toArray(new String[arr.size()]);
-        int count[] = new int[9];
+        int count[] = new int[16];
 
         for (String temp : a) {
             switch (temp) {
-                case "H": count[0]++;
+
+                case "Al":  count[0]++;
                             break;
-                case "O": count[1]++;
+                case "B":   count[1]++;
                             break;
-                case "Na": count[2]++;
+                case "Be":  count[2]++;
                             break;
-                case "Cl": count[3]++;
+                case "C":   count[3]++;
                             break;
-                case "K": count[4]++;
+                case "F":   count[4]++;
                             break;
-                case "He": count[5]++;
+                case "H":   count[5]++;
                             break;
-                case "C": count[6]++;
+                case "He":  count[6]++;
                             break;
-                case "Se": count[7]++;
+                case "Li":  count[7]++;
                             break;
-                case "Po": count[8]++;
+                case "Mg":  count[8]++;
                             break;
+                case "N":   count[9]++;
+                            break;
+                case "Na":  count[10]++;
+                            break;
+                case "Ne":  count[11]++;
+                            break;
+                case "O":   count[12]++;
+                            break;
+                case "P":   count[13]++;
+                            break;
+                case "S":   count[14]++;
+                            break;
+                case "Si": count[15]++;
+                            break;
+
+
             }
         }
         TextView tv = (TextView) findViewById(R.id.textView2);
