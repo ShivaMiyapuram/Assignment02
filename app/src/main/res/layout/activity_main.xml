@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.example.s528748.assignment02.MainActivity">
+    tools:context="com.example.s528748.assignment02.MainActivity"
+    >
 
     <TextView
         android:id="@+id/textView3"
@@ -16,10 +17,10 @@
         android:text="Periodic Table"
         android:textStyle="bold"
         android:layout_marginBottom="30dp"
-        android:textSize="22sp"
+        android:textSize="30sp"
         android:fontFamily="serif"
         android:textColor="@color/colorPrimaryDark"
-        android:background="#E0F7FA"/>
+        />
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -253,8 +254,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Reset"
+                android:textColor="#ECEFF1"
                 android:onClick="onReset"
-                android:background="@color/colorPrimary"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:layout_marginRight="5dp"
                 />
 
@@ -263,8 +265,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Calculate"
+                android:textColor="#ECEFF1"
                 android:onClick="onCalculate"
-                android:background="@color/colorPrimary"
+                android:backgroundTint="@android:color/holo_blue_light"
                 />
 
 
@@ -272,19 +275,18 @@
         <LinearLayout android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             >
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_marginLeft="20dp"
             android:gravity="left"
             android:text="Formula:"
             android:fontFamily="serif"
-
+            android:textStyle="bold"
             android:textSize="22sp" />
 
             <TextView
