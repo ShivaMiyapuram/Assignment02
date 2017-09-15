@@ -16,7 +16,7 @@
         android:layout_gravity="center_horizontal"
         android:text="Periodic Table"
         android:textStyle="bold"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="50dp"
         android:textSize="30sp"
         android:fontFamily="serif"
         android:textColor="@color/colorPrimaryDark"
@@ -28,8 +28,6 @@
         android:layout_gravity="center"
         android:rowCount="2"
         android:columnCount="10"
-
-
         >
 
         <Button
@@ -42,9 +40,7 @@
             android:onClick="onClick"
             android:layout_column="0"
             android:layout_row="0"
-            android:textSize="5sp"
-
-
+            android:textSize="6sp"
             />
 
         <Button
@@ -53,12 +49,11 @@
             android:layout_height="33dp"
             android:background="#673AB7"
             android:text="Helium"
-            android:textSize="5sp"
+            android:textSize="6sp"
             android:layout_margin="2.5dp"
             android:onClick="onClick"
             android:layout_row="0"
             android:layout_column="9"
-
 
             />
 
@@ -72,7 +67,7 @@
             android:onClick="onClick"
             android:layout_column="0"
             android:layout_row="1"
-            android:textSize="5sp"
+            android:textSize="6sp"
             />
 
         <Button
@@ -85,7 +80,9 @@
             android:onClick="onClick"
             android:layout_column="1"
             android:layout_row="1"
-            android:textSize="5sp"
+            android:textSize="6sp"
+
+
             />
 
         <Button
@@ -96,13 +93,12 @@
             android:text="Boron"
             android:layout_margin="2.5dp"
             android:onClick="onClick"
-
             android:layout_row="1"
             android:layout_column="4"
-            android:textSize="5sp"
+            android:textSize="6sp"
+            android:layout_marginLeft="33dp"
 
             />
-
 
         <Button
             android:id="@+id/button7"
@@ -114,7 +110,7 @@
             android:onClick="onClick"
             android:layout_row="1"
             android:layout_column="5"
-            android:textSize="5sp"
+            android:textSize="6sp"
             />
 
         <Button
@@ -127,9 +123,8 @@
             android:onClick="onClick"
             android:layout_row="1"
             android:layout_column="6"
-            android:textSize="5sp"
+            android:textSize="6sp"
             />
-
 
         <Button
             android:id="@+id/button2"
@@ -141,7 +136,7 @@
             android:onClick="onClick"
             android:layout_row="1"
             android:layout_column="7"
-            android:textSize="5sp"
+            android:textSize="6sp"
             />
 
         <Button
@@ -154,7 +149,7 @@
             android:onClick="onClick"
             android:layout_row="1"
             android:layout_column="8"
-            android:textSize="5sp"
+            android:textSize="6sp"
             />
 
         <Button
@@ -167,160 +162,86 @@
             android:onClick="onClick"
             android:layout_row="1"
             android:layout_column="9"
-            android:textSize="5sp"
+            android:textSize="6sp"
             />
 
+        </GridLayout>
 
-
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="33dp"
-            android:layout_height="33dp"
-            android:background="#80DEEA"
-            android:text="Sodium"
-            android:layout_margin="2.5dp"
-            android:onClick="onClick"
-            android:textSize="5sp"
-            />
-
-        <Button
-            android:id="@+id/button16"
-            android:layout_width="33dp"
-            android:layout_height="33dp"
-            android:background="#004D40"
-            android:text="Magnesium"
-            android:layout_margin="2.5dp"
-            android:onClick="onClick"
-            android:textSize="5sp"
-            />
-
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="33dp"
-            android:layout_height="33dp"
-            android:background="#4CAF50"
-            android:text="Aluminium"
-            android:layout_margin="2.5dp"
-            android:onClick="onClick"
-            android:textSize="5sp"
-
-            />
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="33dp"
-            android:layout_height="33dp"
-            android:background="#009688"
-            android:text="Silicon"
-            android:layout_margin="2.5dp"
-            android:onClick="onClick"
-            android:textSize="5sp"
-            />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="33dp"
-            android:layout_height="33dp"
-            android:background="#D81B60"
-            android:text="Phosphorous"
-            android:layout_margin="2.5dp"
-            android:onClick="onClick"
-            android:textSize="5sp"
-            />
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="33dp"
-            android:layout_height="33dp"
-            android:background="#2196F3"
-            android:text="Sulphur"
-            android:layout_margin="2.5dp"
-            android:onClick="onClick"
-            android:textSize="5sp"
-            
-            />
-
-        //
-
-    </GridLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp"
-        >
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Click on elements"
-            android:gravity="center"
-            android:textColor="@android:color/darker_gray"
-            android:backgroundTint="@android:color/holo_blue_light"
-            android:layout_gravity="center"/>
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
-            >
-
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reset"
-                android:textColor="#ECEFF1"
-                android:onClick="onReset"
-                android:backgroundTint="@android:color/holo_blue_light"
-                android:layout_marginRight="5dp"
-                />
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Calculate"
-                android:textColor="#ECEFF1"
-                android:onClick="onCalculate"
-                android:backgroundTint="@android:color/holo_blue_light"
-                />
-
-
-        </LinearLayout>
-        <LinearLayout android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="25dp"
-            >
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:gravity="left"
-            android:text="Formula:"
-            android:fontFamily="serif"
-            android:textStyle="bold"
-            android:textSize="22sp" />
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Click on elements"
+                android:gravity="center"
+                android:textColor="@android:color/darker_gray"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:textColor="#ECEFF1"
+                    android:onClick="onReset"
+                    android:backgroundTint="@android:color/holo_blue_light"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate"
+                    android:textColor="#ECEFF1"
+                    android:onClick="onCalculate"
+                    android:backgroundTint="@android:color/holo_blue_light"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                >
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="serif"
                 android:layout_marginLeft="25dp"
-                android:text="_ _ _ _ _ _ _"
+                android:gravity="left"
+                android:text="Formula:"
+                android:fontFamily="serif"
+                android:textStyle="bold"
                 android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:layout_marginLeft="25dp"
+                    android:text="_ _ _ _ _ _ _"
+                    android:textSize="22sp" />
+            </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
-
-
-</LinearLayout>
